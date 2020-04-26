@@ -10,6 +10,8 @@ void crearGrupo(Grupo ** h, Grupo **t, int idProfesor){
 	}
 	nuevo -> id = idGpo;
 	idGpo ++;
-	nuevo -> numeroDeAlumnos = rand()  % 11 + 40;
 	nuevo -> maestro = idProfesor;
+	for(int i = idAlumno; i < (idAlumno * (idGpo + 1)); i++){
+		nuevo -> alumnos[i] = idAlumno;
+	}
 }
