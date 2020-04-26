@@ -1,5 +1,5 @@
-void modificarAlumno(Alumno **h, int id){
-	Alumno *aux = *h;
+void modificarProfesor(Profesor **h, int id){
+	Profesor *aux = *h;
 	while(aux -> id != id){
 		aux = aux->sig;
 		if(aux->id = id){
