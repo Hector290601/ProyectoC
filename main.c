@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "structs.h"
+#include "grupo/mostrarGrupo.h"
 #include "grupo/crearGrupo.h"
 #include "alumno/mostrarAlumno.h"
 #include "alumno/modificarAlumno.h"
