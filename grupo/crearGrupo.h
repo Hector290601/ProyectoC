@@ -1,5 +1,6 @@
 void crearGrupo(Grupo ** h, Grupo **t, int idProfesor){
-	//printf("iteración %d\n", idProfesor);
+/**
+	printf("iteración %d\n", idProfesor);
 	printf("Reservando espacio\n");
 	Grupo *nuevo = (Grupo *) malloc(sizeof(Grupo));
 	printf("Espacio reservado\n");
@@ -18,4 +19,5 @@ void crearGrupo(Grupo ** h, Grupo **t, int idProfesor){
 	}
 	printf("Grupo creado:\n");
 	mostrarGrupo(*h, nuevo -> id);
+**/
 }
