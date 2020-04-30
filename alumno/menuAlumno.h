@@ -2,7 +2,7 @@ void menuAlumno(Alumno **headAlumno){
 	int opc, id;
 	do{
 		printf("Selecciona una opción:\n1)Modificar datos\n2)Ver calificaciones\n3)Nuevo alumno\n4)Ver alumno\n5)Salir\n");
-		printf("idGpo: %d", &idGpo);
+		printf("idGpo: %d", idGpo);
 		if(scanf("%d", &opc) == 1 && idAlumno > 0 && idGpo > 0){
 			switch(opc){
 				case 1:

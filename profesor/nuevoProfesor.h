@@ -6,8 +6,8 @@ void nuevoProfesor(Profesor **h){
 		}else{
 			(*h)-> sig = nuevo;
 		}
-		printf("Estás crando un nuevo alumno\n");
-		nuevo->id = idAlumno;
+		printf("Está crando un nuevo profesor\n");
+		nuevo->id = idProfesor;
 		idProfesor ++;
 		maxGpo++;
 		printf("Nombre:\n");

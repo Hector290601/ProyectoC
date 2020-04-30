@@ -25,9 +25,9 @@ int idProfesor = 0;
 
 typedef struct grupo{
 	int id;
+	int maestro;
 	int numeroDeAlumnos;
 	int alumnos[30];
-	int maestro;
 	struct grupo *sig;
 }Grupo;
 

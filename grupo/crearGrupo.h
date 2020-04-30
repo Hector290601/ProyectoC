@@ -1,23 +1,20 @@
 void crearGrupo(Grupo ** h, Grupo **t, int idProfesor){
-/**
-	printf("iteración %d\n", idProfesor);
-	printf("Reservando espacio\n");
+	printf("h: %p\n", (*h));
+	printf("prfs:  %d\n", idProfesor);
+	printf("t: %p\n", (*t));
 	Grupo *nuevo = (Grupo *) malloc(sizeof(Grupo));
-	printf("Espacio reservado\n");
 	if(*h == *t){
 		*h = nuevo;
 		*t = nuevo;
 	}else{
 		(*t) -> sig = nuevo;
+		*t = nuevo;
 	}
 	nuevo -> id = idGpo;
-	idGpo ++;
 	nuevo -> maestro = idProfesor;
-	printf("14");
-	for(int i = idAlumno; i < (idAlumno * (idGpo + 1)); i++){
-		nuevo -> alumnos[i] = idAlumno;
+	nuevo -> numeroDeAlumnos = 0;
+	for(int i = 0; i<30; i++){
+		nuevo -> alumnos[i] = 0;
 	}
-	printf("Grupo creado:\n");
-	mostrarGrupo(*h, nuevo -> id);
-**/
+	idGpo ++;
 }

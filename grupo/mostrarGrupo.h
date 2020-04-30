@@ -1,10 +1,13 @@
 void mostrarGrupo(Grupo *h, int id){
-	printf("Grupo:\n");
-	while(h -> id != id){
-		h = h->sig;
-		if(h -> id = id){
+	Grupo* aux = h;
+	printf("antes: %p\n", h);
+	while(aux->id != id){
+		aux = aux->sig;
+		printf("%p -> ", aux);
+		if(aux->id = id){
 			break;
 		}
 	}
-	printf("ID: %d\nNúmero de Alumnos: %d\nProfesor: %s\n", h -> id, h -> numeroDeAlumnos, h -> maestro);
+	printf("al finalh: %p\n", aux);
+	printf("ID: %d\nNúmero de Alumnos: %d\nProfesor: %s\n", aux->id, aux->numeroDeAlumnos, aux->maestro);
 }

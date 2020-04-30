@@ -8,7 +8,7 @@ void menuProfesor(Profesor **head){
 				case 1:
 					printf("Ingrese su ID:\n");
                	                        scanf("%d", &id);
-                       	                if(id <=idAlumno){
+                       	                if(id <=idProfesor){
 						modificarProfesor(&(*head), id);
                                        	}else{
                                                	printf("ID incorrecto\n");
@@ -22,7 +22,7 @@ void menuProfesor(Profesor **head){
 				case 4:
 					printf("Ingrese su ID:\n");
                	                        scanf("%d", &id);
-                       	                if(id <=idAlumno){
+                       	                if(id <=idProfesor){
                                	                mostrarProfesor(*head, id);
                                        	}else{
                                                	printf("ID incorrecto\n");
