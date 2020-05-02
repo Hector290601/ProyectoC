@@ -4,6 +4,7 @@
 #include "structs.h"
 #include "grupo/mostrarGrupo.h"
 #include "grupo/crearGrupo.h"
+#include "grupo/subirCalificaciones.h"
 #include "alumno/mostrarAlumno.h"
 #include "alumno/modificarAlumno.h"
 #include "alumno/materiasAlumno.h"

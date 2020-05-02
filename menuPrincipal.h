@@ -12,20 +12,12 @@ void menuPrincipal(void){
 		if(scanf("%d", &opc) == 1){
 			switch(opc){
 				case 1:
-					menuProfesor(&headProfesor);
+					menuProfesor(&headProfesor, &headGrupo, &tailGrupo, &headAlumno);
 				break;
 				case 2:
-					menuAlumno(&headAlumno);
+					menuAlumno(&headAlumno, &headGrupo);
 				break;
 			}
-			if(idGpo < maxGpo){
-					for(j = i; j <idProfesor; j++){
-						crearGrupo(&headGrupo, &tailGrupo, j);
-						printf("mosrando grupo\n");
-						mostrarGrupo(headGrupo, j);
-						i++;
-					}
-				}
 		}else{
 			setbuf(stdin, NULL);
 		}

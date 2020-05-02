@@ -4,7 +4,7 @@ typedef struct alumno{
 	char apellidoPaterno[50];
 	char apellidoMaterno[50];
 	int anio;
-	float calificaciones[6];
+	float calificaciones;
 	struct alumno *sig;
 }Alumno;
 
@@ -16,8 +16,6 @@ typedef struct profesor{
 	char apellidoPaterno[50];
 	char apellidoMaterno[50];
 	int materia;
-	char horario[5];
-	int grupos[6];
 	struct profesor *sig;
 }Profesor;
 
